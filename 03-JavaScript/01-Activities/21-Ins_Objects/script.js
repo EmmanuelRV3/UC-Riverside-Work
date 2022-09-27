@@ -8,9 +8,24 @@ var planet = {
   population: "7.594 billion"
 };
 
+var car = {
+  make: 'Ford',
+  model: 'Mach-E',
+  trim: ['Premium'],
+  battery: 'Extended',
+  available: true,
+  owner: {
+    name: 'Farish',
+    location: 'Oak Hills',
+    email: 'farish@farish.dev'
+  }
+}
+
 // To access a property's value that is a string, number or booleean, use the object's name and the associated key	
 // Uses dot notation and logs "Earth"	
 console.log(planet.name);
 	
 // Uses bracket notation and logs "Earth"
 console.log(planet["name"]);
+
+console.log(car.owner.location);
